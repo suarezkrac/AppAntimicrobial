@@ -3,6 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>antimicrobial</title>
+    <script type="text/javascript">
+        var diagnosticosJSON;
+        var dosisJSON;
+        function loadJSON1(callback) {   
+
+            var xobj = new XMLHttpRequest();
+                xobj.overrideMimeType("application/json");
+            xobj.open('GET', 'resources/diagnosticos.json', true); 
+            xobj.onreadystatechange = function () {
+                  if (xobj.readyState == 4 && xobj.status == "200") {
+                    callback(xobj.responseText);
+                  }
+            };
+            xobj.send(null);  
+         }
+         function loadJSON2(callback) {   
+
+            var xobj = new XMLHttpRequest();
+                xobj.overrideMimeType("application/json");
+            xobj.open('GET', 'resources/dosis.json', true); 
+            xobj.onreadystatechange = function () {
+                  if (xobj.readyState == 4 && xobj.status == "200") {
+                    callback(xobj.responseText);
+                  }
+            };
+            xobj.send(null);  
+         }
+
+        loadJSON1(function(response) {
+            diagnosticosJSON = JSON.parse(response);
+            
+            
+        });
+        loadJSON2(function(response) {
+            dosisJSON = JSON.parse(response);
+            console.log(dosisJSON);
+            
+            
+        });
+
+    </script>
     <style type="text/css">
          /**
          * Example of an initial loading indicator.
