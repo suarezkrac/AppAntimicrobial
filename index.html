@@ -10,7 +10,7 @@
 
             var xobj = new XMLHttpRequest();
                 xobj.overrideMimeType("application/json");
-            xobj.open('GET', 'resources/diagnosticos.json', true); 
+            xobj.open('GET', 'http://www.goaplicaciones.com/aplicaciones/appmicrobial/diagnosticos.php', true); 
             xobj.onreadystatechange = function () {
                   if (xobj.readyState == 4 && xobj.status == "200") {
                     callback(xobj.responseText);
@@ -22,7 +22,7 @@
 
             var xobj = new XMLHttpRequest();
                 xobj.overrideMimeType("application/json");
-            xobj.open('GET', 'resources/dosis.json', true); 
+            xobj.open('GET', 'http://www.goaplicaciones.com/aplicaciones/appmicrobial/dosis.php', true); 
             xobj.onreadystatechange = function () {
                   if (xobj.readyState == 4 && xobj.status == "200") {
                     callback(xobj.responseText);
