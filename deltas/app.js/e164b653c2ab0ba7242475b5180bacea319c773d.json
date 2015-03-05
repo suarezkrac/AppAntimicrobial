@@ -1,1 +1,0 @@
-["function _9bc8d1cc66d5196361aba4694d9b7f71794a3c40",50,608535,610655,223,"launch:function(){",613565,218,610876,972,611868,1082,"b){var a=this.getApplication().getViews();console.log(a);if(!a[8]){Ext.Viewport.add([{xtype:\"LugaresView\"}]);Ext.Viewport.setActiveItem(8)}else",612952,32,613499,49,605024,38,613070,495,613784,214,614008,797,614827,208,579563,36,608590,2034]
