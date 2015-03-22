@@ -17,11 +17,13 @@
         Multimedia Lab SAS
     </author>
 
-    <icon src="resources/icons/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-    <icon src="resources/icons/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-    <icon src="resources/icons/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-    <icon src="resources/icons/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
-    <icon src="resources/icons/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+    <icon src="icon.png"/>
+
+    <icon src="ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
 
 
 
