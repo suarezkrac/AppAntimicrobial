@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.phonegap.antimicrobial"
         versionCode = "10" 
-        version     = "2.0.0" >
+        version     = "2.1.0" >
 
     <!-- versionCode is optional and Android only -->
 
@@ -16,5 +16,12 @@
     <author href="http://multimedialab.co" email="info@multimedialab.co">
         Multimedia Lab SAS
     </author>
+
+     <platform name="android">
+              <icon src="resources/icons/ldpi.jpg" density="ldpi" />
+              <icon src="resources/icons/mdpi.jpg" density="mdpi" />
+              <icon src="resources/icons/hdpi.jpg" density="hdpi" />
+              <icon src="resources/icons/xhdpi.jpg" density="xhdpi" />
+     </platform>
 
 </widget>
